@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Data (raw CFPB dumps are large; sample data is committed)
+data/raw/
+*.csv.zip
+
+# Model artifacts (binary; regenerate with scripts/)
+artifacts/models/*.joblib
+artifacts/models/*.pt
+artifacts/models/transformer/
+artifacts/index/*.faiss
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+
+# Env / IDE
+.env
+.env.local
+.DS_Store
+.idea/
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
